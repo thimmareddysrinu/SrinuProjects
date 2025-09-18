@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import Home from './components/Home/Home'
-
+import { Routes, Route } from 'react-router-dom'
+import About from './components/About/About'
 
 function App() {
   
 
   return (
     <>
-    <h1 className='container'>srinu</h1>
-    <Home/>
+    <Routes>
+      
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+
+    </Routes>
+  
     </>
   )
 }
