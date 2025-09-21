@@ -1,5 +1,6 @@
 import { useState } from 'react'
-
+import {Route,Router} from 'react-router'
+import Navbar from './Pages/Home/Navbar/Navbar'
 
 
 function App() {
@@ -7,10 +8,8 @@ function App() {
 
   return (
    <>
-   <div className="container">
-     <h1>Welcome to the Travel App</h1>
-     <p>Explore the world with us!</p>
-   </div>
+   <Navbar/>
+   
    </>
   )
 }

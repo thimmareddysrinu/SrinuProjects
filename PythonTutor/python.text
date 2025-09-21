@@ -1,0 +1,79 @@
+WHAT IS PYTHON ?
+1.python is a programming lanaguage 
+2.it is high level & interpreted and scripted programming lanaguage
+3.It is used in different type module like web developement,data sciences
+4. It is developed gundo van in 1991
+
+whay we use Python ?
+1. it has high community
+2. it has huge packages and libraries
+3.it is secured system 
+4.it is to easy learn and write as compared to other 
+ 
+what is compiler in python ?
+ans:compiler is used compile the high and low level lanaguage at time 
+
+what is interpreter?
+ans: interpreter is check the high and low level code and it can check line by line code 
+
+what is variable in python?
+ans:variable is used to store the data and said to with a variable to the value 
+
+x=12
+variable = value 
+it is nothing but value any type data ex:list,str etc...
+
+# variable  name is start with alphabets and underscore
+# variable name is not start with numeric or symbol
+# it will be case sensitive
+
+what are the Data types in python and explain each of them?
+ans: int,str,boolean,float,list,tuple,complex ,set,dictionary
+
+NUMERIC Type:::
+    integer:integer is data type in python and it represented in the numeric value 
+       1. this can positive or negative
+       this can resprented like 
+    float : then float also data type which represent numeric value with a floating point
+      * this can positive or negative value 
+       example :23.09
+
+    complex : the is also data type and it having the real and imaginary parts 
+      example:  2+3j
+
+
+
+
+
+
+
+"""   house=12 """
+
+string:
+   1.the string is data type which is represent sequences of characters like alphabets,numbers,symbols
+   2.then string are represented in the '' and "" and  """
+   
+   string="house123" or 'hougr23@' or """house123@"""
+
+
+list : this is sequence data type and it is place the values between the square brackets
+  * we can store any type value like numeric,string, boolean 
+
+  list=['greek',"greek",123,123.4]
+
+tuple :
+
+
+
+Set :
+
+
+
+Dictionary:
+
+
+None:
+
+
+FRogenSet:
+  
