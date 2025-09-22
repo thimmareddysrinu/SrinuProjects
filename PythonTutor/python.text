@@ -76,4 +76,9 @@ None:
 
 
 FRogenSet:
+
+range: range give as (1,3)
+
+isthe can know 1 is starting and 3 is the ending ones
+
   
