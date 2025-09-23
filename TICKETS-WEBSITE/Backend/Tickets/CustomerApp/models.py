@@ -1,3 +1,6 @@
+
+
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.dispatch import receiver
@@ -86,6 +89,35 @@ class MovieTicketBooking(models.Model):
 
     def __str__(self):
         return f"Booking by {self.customer.username} for {self.showtime.movie.MovieTitle} ----{self.showtime.show_start}---{self.showtime.show_end}  at {self.TheaterNameBooked.TheaterName}"
+
+
+paymentstatus=[
+    ('Credit Card', 'Credit Card'),
+    
+    ('Debit Card', 'Debit Card'),
+    
+    ('PayPal', 'PayPal'),
+    ('Net Banking', 'Net Banking'),
+    
+    ('UPI', 'UPI'),
+    
+    ('Wallet', 'Wallet'),
+    
+    
+    ]
+class Payment(models.Model):
+    booking = models.OneToOneField(MovieTicketBooking, on_delete=models.CASCADE)
+    payment_time = models.DateTimeField(auto_now_add=True)
+    amount = models.DecimalField(max_digits=8, decimal_places=2)
+    payment_method = models.CharField(choices=paymentstatus,max_length=50)
+    transaction_id = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return f"Payment of {self.amount} for booking {self.booking.id}"
+
+
+@receiver(post_save, sender=Payment)
+
 
 
 @receiver(post_save, sender=TheaterName)
