@@ -154,56 +154,9 @@ print(stringname)
 
 
 
-# About OOP concepts
 
 
 
-"""
- what is OOP?
-
- ans: OOP stands for Object-Oriented Programming. It is a programming paradigm that uses "objects" to represent data and methods to manipulate that data. OOP focuses on the concepts of encapsulation, inheritance, polymorphism, and abstraction to create modular and reusable code.
-1.inheritance
-
-  Inheritance is a mechanism in OOP that allows one class (child class) to inherit the attributes and methods of another class (parent class). This promotes code reusability and establishes a relationship between classes.
-   Types of inheritance:
-  
-  single inheritance: A child class inherits from only one parent class.
-   mainclass -> subclass
-
-  multiple inheritance: A child class inherits from multiple parent classes.
-   mainclass -> subclass1 ->subclass2
-               
-
-  multilevel inheritance: A class is derived from a class which is also derived from another class.
-    mainclass -> subclass1 -> subclass2
-  
-  hierarchical inheritance: Multiple child classes inherit from a single parent class.
-    mainclass -> subclass1
-               -> subclass2
-  hybrid inheritance: A combination of two or more types of inheritance.
-    mainclass -> subclass1 -> subclass2
-2.polymorphism
-
-   Polymorphism is the ability of different objects to respond to the same method call in different ways. This is often achieved through method overriding and interfaces.
-
-
-3.encapsulation
-
-   Encapsulation is the bundling of data (attributes) and methods (functions) that operate on the data into a single unit, or class. It restricts direct access to some of the object's components, which is a means of preventing unintended interference and misuse of the methods and data.
-
-4.abstraction
-
-   Abstraction is the concept of hiding the complex implementation details and showing only the essential features of the object. It helps in reducing programming complexity and increases efficiency.
-
-5. classes and objects
-
-    A class is a blueprint for creating objects. It defines a set of attributes and methods that the created objects will have. An object is an instance of a class, containing real values instead of variables.
-
-6. overriding
-    Overriding is a feature in OOP that allows a subclass to provide a specific implementation of a method that is already defined in its superclass. This is used to achieve runtime polymorphism.
-
-
-"""
 
 # Example of single inheritance
 # class AnimalParent:
@@ -318,14 +271,51 @@ print(stringname)
 #         super().__init__(firstname, lastname, email, memberid, address)
 #         self.Gpa = Gpa
 #         self.course = course
+   
         
 
-# member = universitymember("John", "Doe", "john@example.com", 2, "Some Address")
-# print(member.firstname)
+# teacher = Teacher("teacherJohn", "teacherDoe", "Teacherjohn@example.com", 2, "Some Address", "Mathematics", 50000)
+# student=student("studentJohn", "studentDoe", "studentjohn@example.com", 2, "Some Address", 7.9, "B.tech")
 
+# print(student.firstname)
+# print(student.lastname)
+# print(teacher.firstname)
+# print(teacher.lastname)
 
 
 # overriding
+class Animal:
+    _sound="Some sound"
+    def speak(self):
+        return "I am an animal."
+
+class Dog(Animal):
+    
+    def speak(self):
+        return "Woof!"
+
+
+
+# 2 Duck Typing
+class Cat:
+    def speak(self):
+        return "Meow!"
+class Catmom:
+    def speak(self):
+        return "Meow..............!"    
+    
+
+# def make_animal_speak(Animal):
+#     # This function works for both Dog and Cat because they both have a 'speak' method.
+#     return Animal.speak()
+cat=Cat()
+dog=Dog()
+catmom=Catmom()
+
+print(cat.speak())
+print(dog.speak())
+print(catmom.speak())
+
 
 # class Function():
 #    def add(self,a,b,c):
@@ -354,3 +344,6 @@ print(stringname)
 
 
 # encapsulation
+
+
+
