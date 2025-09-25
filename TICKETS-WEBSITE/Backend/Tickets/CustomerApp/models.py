@@ -33,7 +33,7 @@ class MovieName(models.Model):
     director = models.CharField(max_length=100)
     cast = models.TextField()
     description = models.TextField()
-    poster = models.ImageField(upload_to='posters/')
+    poster = models.ImageField(upload_to='posters/Movie')
     trailer_url = models.URLField()
     rating = models.FloatField()
 

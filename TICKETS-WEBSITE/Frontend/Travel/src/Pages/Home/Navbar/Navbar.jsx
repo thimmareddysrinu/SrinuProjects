@@ -4,7 +4,7 @@ function Navbar() {
   return (
 
     <>
-   <nav className="navbar navbar-expand-lg bg-body-tertiary">
+ <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Navbar scroll</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@ function Navbar() {
       </form>
     </div>
   </div>
-</nav>
+ </nav>
     </>
   )
 }

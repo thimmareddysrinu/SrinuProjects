@@ -1,0 +1,23 @@
+.backgrounded {
+  background-image: url('https://media.istockphoto.com/id/519504435/photo/truro-cornwall-england-sunset.jpg?s=612x612&w=0&k=20&c=1JbTW55xoxXfpMvBCbtXfwvNUBV5Av45l60c78wBnXQ=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto; /* or any height */
+}
+.backgrounded {
+  background-image: url('https://media.istockphoto.com/id/519504435/photo/truro-cornwall-england-sunset.jpg?s=612x612&w=0&k=20&c=1JbTW55xoxXfpMvBCbtXfwvNUBV5Av45l60c78wBnXQ=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px; /* make sure to set a height */
+  position: relative;
+}
+
+.half-out-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -25px; /* adjust so half button is out */
+  transform: translateX(-50%);
+  z-index: 2; /* above the card */
+}
