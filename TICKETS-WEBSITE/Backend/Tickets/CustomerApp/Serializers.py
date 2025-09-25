@@ -1,7 +1,7 @@
-# from rest_framework import serializers
-# import random
-# from django.contrib.auth.models import User
-# from .models import otpModel
+from rest_framework import serializers
+import random
+from django.contrib.auth.models import User
+from .models import *
 
 # class sendOtpSerializer(serializers.Serializer):
 #     phoneNumber = serializers.CharField(max_length=15)
@@ -71,4 +71,26 @@
 
 #          # Implement your validation logic here
      
-         
+     ######## serializers for ticketing site
+class MovieNameSerializer(serializers.ModelSerializer):
+    class Meta:
+        models=MovieName
+        fields="__all__"    
+class TheartreSerializer(serializers.ModelSerializer):
+     class Meta:
+        models=TheaterName
+        fields="__all__" 
+class ShowTimeSerializer(serializers.ModelSerializer):
+     class Meta:
+        models=Showtime
+        fields="__all__"         
+
+class SeatSerializer(serializers.ModelSerializer):
+     class Meta:
+        models=Seat
+        fields="__all__" 
+class MovieTicketingSerializer(serializers.ModelSerializer):
+    class Meta:
+        models=MovieTicketBooking
+        fields="__all__"        
+
